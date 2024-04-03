@@ -8,7 +8,7 @@
 </head>
 <body class="bg-white text-black">
     <!-- create a page with styles, logo name EDU with the buttons Modules, Features, Signup, Contact -->
-    <header class="bg-gray-500">
+    <header class="bg-[#b65858]">
         <div class="container mx-auto flex justify-between items-center py-4">
             <div class="text-5xl font-bold border-black border-y-2 cursor-pointer">
                 <h1><a href="#"></a>EDU</h1>
@@ -16,10 +16,10 @@
             <nav>
                 <ul class="flex">
                     <!-- create white button of home with gradient hover -->
-                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full">Modules</a></li>
-                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full">Features</a></li>
-                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full">Signup</a></li>
-                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full">Contact</a></li>
+                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Modules</a></li>
+                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Features</a></li>
+                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Signup</a></li>
+                    <li><a href="#" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,9 +40,10 @@
     <section class="container mx-auto py-8">
         <h2 class="text-4xl font-bold text-center">Features</h2>
         <div class="grid grid-cols-3 gap-4 mt-8">
-            <div class="p-4 rounded-lg shadow-lg text-center bg-gray-500">
+            <!-- make a card in html and tailwind with the heading school and when we will hover it will show information about school -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
                 <img src="./images/feature1.png" alt="feature1" class="w-24 h-24 mx-auto">
-                <h3 class="text-2xl font-bold mt-4">School</h3>
+                <h3 class="text-2xl font-bold mt-4">Student Info</h3>
             </div>
             <!-- create a card with an icon and a heading -->
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
@@ -93,12 +94,15 @@
                 </div>
         </div>
     </section>
-            
+    
     <!-- create a footer with a heading of EDU -->
-    <footer class="bg-gray-500 text-black text-center py-4">
-        <h2 class="text-4xl font-bold">EDU</h2>
-        <p>&copy; 2021 All rights reserved</p>
+    <footer class="bg-[#b65858] text-black text-center py-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold">EDU</h2>
+            <p class="font-medium">&copy; 2021 All rights reserved</p>
+        </div>
     </footer>
+
     
 </body>
 </html>
