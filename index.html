@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDU | School Management</title>
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body class="bg-black text-black">
-    <!-- create a page with styles, logo name EDU with the buttons Modules, Features, Signup, Contact -->
-
     <!-- create a section with a background image of a school with a heading of School Management System -->
     <section class="bg-cover bg-center bg-no-repeat h-screen items-center" style="background-image: url('edu2.avif')">
         <header>
@@ -36,6 +35,7 @@
         </header>
     </section>
     <br>
+
     <!-- create a section with a heading of Features -->
     <section class="container mx-auto py-8">
         <div id="features">
@@ -120,33 +120,48 @@
 
 
     <!-- create a beautiful contact part in a box -->
-    <section class="bg-white text-black py-8">
-        <div class="container mx-auto text-center" id="contact">
-            <h2 class="text-4xl font-bold">Contact Us</h2>
-            <p class="mt-4">For any queries, feel free to contact us</p>
-            <div class="grid grid-cols-3 gap-4 mt-8">
-                <div>
-                    <h3 class="text-2xl font-bold mt-4">Phone</h3>
-                    <p>+91 1234567890</p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mt-4">Email</h3>
-                    <p>
-                        <a href="edu.com">www.edu@gmail.com</a>
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mt-4">Address</h3>
-                    <p>123, XYZ Street, ABC City</p>
-                </div>
-            </div>
-        </div>
+    <section class="bg-black text-black py-8">
+      <div id="contact">
+        <div class="container mx-auto px-4 py-8">
+          <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+              <h1 class="text-4xl font-bold mb-6 text-center">Contact Us</h1>
+              <form action="#" method="post">
+                  <div class="mb-4 ml-5">
+                      <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                      <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md" placeholder="Your Name" required>
+                  </div>
+                  <div class="mb-4 ml-5">
+                      <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                      <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md" placeholder="Your Email" required>
+                  </div>
+                  <div class="mb-4 ml-5">
+                      <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+                      <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-md" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+                  <div class="text-center">
+                      <button type="submit" class="bg-black text-white py-2 px-4 rounded-md hover:bg-[#b65858] hover:text-black font-medium">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      </div>
     </section>
     
     <!-- create a footer with a heading of EDU -->
     <footer class="bg-[#b65858] text-black text-center py-4">
         <div class="container mx-auto">
             <h2 class="text-4xl font-serif cursor-pointer"><a href="#">EDU</a></h2>
+            <ul>
+              <!-- social media links and logo -->
+                <li class="flex justify-center items-center">
+                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
             <p class="font-medium">&copy; 2021 All rights reserved</p>
         </div>
     </footer>
