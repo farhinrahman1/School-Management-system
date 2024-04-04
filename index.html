@@ -1,171 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDU | School Management</title>
-    <link rel="stylesheet" href="./css/output.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDU | School Management</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
+
 <body class="bg-black text-black">
-    <!-- create a section with a background image of a school with a heading of School Management System -->
-    <section class="bg-cover bg-center bg-no-repeat h-screen items-center" style="background-image: url('edu2.avif')">
-        <header>
-            <div class="container mx-auto flex justify-between items-center py-4">
-                <div class="bg-[#b65858] text-black  border p-1 m-2 text-5xl font-serif border-black border-y-2 cursor-pointer">
-                    <h1><a href="#">EDU</a></h1>
-                </div>
-                <nav>
-                    <ul class="flex">
-                        <!-- create white button of home with gradient hover -->
-                        <li><a href="#modules" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Modules</a></li>
-                        <li><a href="#features" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Features</a></li>
-                        <li><a href="#signup" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Signup</a></li>
-                        <li><a href="#contact" class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="container text-center mx-auto text-black py-40">
-                <h1 class="text-6xl font-bold">Welcome to <span class="font-serif cursor-pointer border-y-2 border-black"><a href="#">EDU</a></span></h1><br>
-                <p class="text-3xl font-semibold">
-                    A complete solution for managing schools. <br>
-                    Manage attendance, exams, fees, library, transport, and hostel.
-                </p>
-            </div>
-        </header>
-    </section>
-    <br>
-
-    <!-- create a section with a heading of Features -->
-    <section class="container mx-auto py-8">
-        <div id="features">
-            <h1 class="mb-4 text-4xl text-center font-extrabold text-gray-400 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-[#b65858]">EDU</span> Features</h1>
-        <div class="flex min-h-screen items-center justify-center bg-black">
-            <div class="grid grid-cols-1 gap-x-16 md:grid-cols-2 lg:grid-cols-3">
-                <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6">
-                    <div class="h-96 w-72">
-                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1563265500-fa2ff1f4fc9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwY2FtcHVzfGVufDB8fDB8fHww" alt="School building" />
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                      <h1 class="font-dmserif text-3xl font-bold text-white">School Information</h1>
-                      <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Discover essential information about our school, including academic programs, extracurricular activities, teacher credentials, campus facilities, and mission statement, providing prospective students and their families with a comprehensive overview of our educational offerings and ethos.</p>
-                      <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
-                    </div>
-                  </div>
-                
-                  <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6">
-                    <div class="h-96 w-72">
-                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://plus.unsplash.com/premium_photo-1681681061533-1a45be326fb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNjaG9vbCUyMGFkbWlzc2lvbnxlbnwwfHwwfHx8MA%3D%3D" alt="School building" />
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                      <h1 class="font-dmserif text-3xl font-bold text-white">Admission Details</h1>
-                      <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Access comprehensive information about our admission process, including eligibility criteria, application deadlines, and required documentation, empowering prospective students and their families to navigate the enrollment process seamlessly.</p>
-                      <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
-                    </div>
-                  </div>
-
-                  <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6">
-                    <div class="h-96 w-72">
-                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1581726690015-c9861fa5057f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNsYXNzfGVufDB8fDB8fHww" alt="School building" />
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                      <h1 class="font-dmserif text-3xl font-bold text-white">Class Management</h1>
-                      <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Simplify class scheduling, attendance tracking, and resource allocation with our intuitive management tools, optimizing classroom efficiency and enhancing the learning experience for both educators and students.</p>
-                      <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
-                    </div>
-                  </div>
-                
-                  <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6 mb-12">
-                    <div class="h-96 w-72">
-                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1554042317-efd62f19bc95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D" alt="School building" />
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                      <h1 class="font-dmserif text-3xl font-bold text-white">Examination</h1>
-                      <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Streamline the examination process with our integrated platform, allowing administrators to create, schedule, and monitor exams, while providing teachers and students with access to results and performance analytics.</p>
-                      <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
-                    </div>
-                  </div>
-
-                  <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6 mb-12">
-                    <div class="h-96 w-72">
-                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1515548212260-ac87067b15ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBheW1lbnR8ZW58MHx8MHx8fDA%3D" alt="School building" />
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                      <h1 class="font-dmserif text-3xl font-bold text-white">Payment Details</h1>
-                      <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Seamlessly manage financial transactions with our secure payment portal, facilitating easy processing of fees for students and salaries for teachers, ensuring transparent and efficient financial operations.</p>
-                      <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
-                    </div>
-                  </div>
-
-                  <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6 mb-12">
-                    <div class="h-96 w-72">
-                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://plus.unsplash.com/premium_photo-1664301850493-37e677ae8376?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fHRlYWNoZXJ8ZW58MHx8MHx8fDA%3D" alt="School building" />
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                      <h1 class="font-dmserif text-3xl font-bold text-white">Teacher Info</h1>
-                      <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Explore detailed profiles of our educators, showcasing their qualifications, experience, and specialties, enabling parents and students to make informed decisions about their academic journey.</p>
-                      <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
-                    </div>
-                  </div>
-            </div>
+  <!-- create a section with a background image of a school with a heading of School Management System -->
+  <section class="bg-cover bg-center bg-no-repeat h-screen items-center" style="background-image: url('edu2.avif')">
+    <header>
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <div class="bg-[#b65858] text-black  border p-1 m-2 text-5xl font-serif border-black border-y-2 cursor-pointer">
+          <h1><a href="#">EDU</a></h1>
         </div>
-        </div>
-    </section>
+        <nav>
+          <ul class="flex">
+            <!-- create white button of home with gradient hover -->
+            <li><a href="#modules"
+                class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Modules</a>
+            </li>
+            <li><a href="#features"
+                class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Features</a>
+            </li>
+            <li><a href="#signup"
+                class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Signup</a>
+            </li>
+            <li><a href="#contact"
+                class="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full font-medium">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container text-center mx-auto text-black py-40">
+        <h1 class="text-6xl font-bold">Welcome to <span class="font-serif cursor-pointer border-y-2 border-black"><a
+              href="#">EDU</a></span></h1><br>
+        <p class="text-3xl font-semibold">
+          A complete solution for managing schools. <br>
+          Manage attendance, exams, fees, library, transport, and hostel.
+        </p>
+      </div>
+    </header>
+  </section>
+  <br>
 
-
-    <!-- create a beautiful contact part in a box -->
-    <section class="bg-black text-black py-8">
-      <div id="contact">
-        <div class="container mx-auto px-4 py-8">
-          <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-              <h1 class="text-4xl font-bold mb-6 text-center">Contact Us</h1>
-              <form action="#" method="post">
-                  <div class="mb-4 ml-5">
-                      <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
-                      <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md" placeholder="Your Name" required>
-                  </div>
-                  <div class="mb-4 ml-5">
-                      <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
-                      <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md" placeholder="Your Email" required>
-                  </div>
-                  <div class="mb-4 ml-5">
-                      <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
-                      <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-md" rows="5" placeholder="Your Message" required></textarea>
-                  </div>
-                  <div class="text-center">
-                      <button type="submit" class="bg-black text-white py-2 px-4 rounded-md hover:bg-[#b65858] hover:text-black font-medium">Submit</button>
-                  </div>
-              </form>
+  <!-- create a section with a heading of Features -->
+  <section class="container mx-auto py-8">
+    <div id="features">
+      <h1 class="mb-4 text-4xl text-center font-extrabold text-gray-400 dark:text-white md:text-5xl lg:text-6xl"><span
+          class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-[#b65858]">EDU</span> Features</h1>
+      <div class="flex min-h-screen items-center justify-center bg-black">
+        <div class="grid grid-cols-1 gap-x-16 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6">
+            <div class="h-96 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src="https://images.unsplash.com/photo-1563265500-fa2ff1f4fc9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwY2FtcHVzfGVufDB8fDB8fHww"
+                alt="School building" />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+              class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">School Information</h1>
+              <p
+                class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Discover essential information about our school, including academic programs, extracurricular
+                activities, teacher credentials, campus facilities, and mission statement, providing prospective
+                students and their families with a comprehensive overview of our educational offerings and ethos.</p>
+              <button
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                More</button>
+            </div>
           </div>
-      </div>
-      </div>
-    </section>
-    
-    <!-- create a footer with a heading of EDU -->
-    <footer class="bg-[#b65858] text-black text-center py-4">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-serif cursor-pointer"><a href="#">EDU</a></h2>
-            <ul>
-              <!-- social media links and logo -->
-                <li class="flex justify-center items-center">
-                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="px-2 py-1 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-full"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-            </ul>
-            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-            <span class="sr-only">Loading...</span>
-            <p class="font-medium">&copy; 2021 All rights reserved</p>
-        </div>
-    </footer>
 
-    
+          <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6">
+            <div class="h-96 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src="https://plus.unsplash.com/premium_photo-1681681061533-1a45be326fb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNjaG9vbCUyMGFkbWlzc2lvbnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="School building" />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+              class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Admission Details</h1>
+              <p
+                class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Access comprehensive information about our admission process, including eligibility criteria,
+                application deadlines, and required documentation, empowering prospective students and their families to
+                navigate the enrollment process seamlessly.</p>
+              <button
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                More</button>
+            </div>
+          </div>
+
+          <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6">
+            <div class="h-96 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src="https://images.unsplash.com/photo-1581726690015-c9861fa5057f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNsYXNzfGVufDB8fDB8fHww"
+                alt="School building" />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+              class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Class Management</h1>
+              <p
+                class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Simplify class scheduling, attendance tracking, and resource allocation with our intuitive management
+                tools, optimizing classroom efficiency and enhancing the learning experience for both educators and
+                students.</p>
+              <button
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                More</button>
+            </div>
+          </div>
+
+          <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6 mb-12">
+            <div class="h-96 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src="https://images.unsplash.com/photo-1554042317-efd62f19bc95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="School building" />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+              class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Examination</h1>
+              <p
+                class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Streamline the examination process with our integrated platform, allowing administrators to create,
+                schedule, and monitor exams, while providing teachers and students with access to results and
+                performance analytics.</p>
+              <button
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                More</button>
+            </div>
+          </div>
+
+          <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6 mb-12">
+            <div class="h-96 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src="https://images.unsplash.com/photo-1515548212260-ac87067b15ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBheW1lbnR8ZW58MHx8MHx8fDA%3D"
+                alt="School building" />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+              class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Payment Details</h1>
+              <p
+                class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Seamlessly manage financial transactions with our secure payment portal, facilitating easy processing of
+                fees for students and salaries for teachers, ensuring transparent and efficient financial operations.
+              </p>
+              <button
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                More</button>
+            </div>
+          </div>
+
+          <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 p-6 mt-6 mb-12">
+            <div class="h-96 w-72">
+              <img
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                src="https://plus.unsplash.com/premium_photo-1664301850493-37e677ae8376?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fHRlYWNoZXJ8ZW58MHx8MHx8fDA%3D"
+                alt="School building" />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+              class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Teacher Info</h1>
+              <p
+                class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Explore detailed profiles of our educators, showcasing their qualifications, experience, and
+                specialties, enabling parents and students to make informed decisions about their academic journey.</p>
+              <button
+                class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- create a beautiful contact part in a box -->
+  <section class="bg-black text-black py-8">
+    <div id="contact">
+      <div class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+          <h1 class="text-4xl font-bold mb-6 text-center">Contact Us</h1>
+          <form action="#" method="post">
+            <div class="mb-4 ml-5">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+              <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md"
+                placeholder="Your Name" required>
+            </div>
+            <div class="mb-4 ml-5">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+              <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md"
+                placeholder="Your Email" required>
+            </div>
+            <div class="mb-4 ml-5">
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+              <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-md" rows="5"
+                placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit"
+                class="bg-black text-white py-2 px-4 rounded-md hover:bg-[#b65858] hover:text-black font-medium">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- links -->
+  <ul class="flex justify-center items-center">
+    <!-- social media links and logo -->
+    <div class="w-10">
+      <li>
+        <a href="https://www.facebook.com/farhin.rahman.169?mibextid=ZbWKwL">
+          <img src="fb.png" alt="Facebook">
+        </a>
+      </li>
+    </div>
+    <div class="w-14">
+      <li>
+        <a href="https://www.linkedin.com/in/farhin-rahman-06510a27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+          <img src="linkedin.png" alt="Linkedin">
+        </a>
+      </li>
+    </div>
+    <div class="w-12 mb-3">
+      <li>
+        <a href="https://github.com/farhinrahman1">
+          <img src="github.png" alt="Github">
+        </a>
+      </li>
+    </div>
+    <div class="w-10">
+      <li>
+        <a href="https://twitter.com/farhinrahman_">
+          <img src="twitter.png" alt="Twitter">
+        </a>
+      </li>
+    </div>
+  </ul>
+  <!-- create a footer with a heading of EDU -->
+  <footer class="bg-[#b65858] text-black text-center py-4">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-serif cursor-pointer"><a href="#">EDU</a></h2>
+    </div>
+    <p class="font-medium">
+      &copy; 2021 EDU. All rights reserved.
+    </p>
+  </footer>
+
+
 </body>
+
 </html>
