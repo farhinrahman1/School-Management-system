@@ -123,72 +123,38 @@
               </div>
             </div>
         </section>
-        <section class="mt-10 flex flex-col">
-            <!-- make a heading of student profile in tailwind -->
-            <h1 class="text-3xl font-serif text-black text-center font-semibold">Student Profile</h1>
-                          <div class="text-start mt-10">
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Name:</h1>
-                                      <h1 class="font-normal text-lg">Farhin Rahman</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Gender:</h1>
-                                      <h1 class="font-normal text-lg">Female</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Date of Birth:</h1>
-                                      <h1 class="font-normal text-lg">29. 07. 2004</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Religion:</h1>
-                                      <h1 class="font-normal text-lg">Islam</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Email:</h1>
-                                      <h1 class="font-normal text-lg">farhin.rahamnp@gmail.com</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Admission Date:</h1>
-                                      <h1 class="font-normal text-lg">6th April</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Class:</h1>
-                                      <h1 class="font-normal text-lg">5</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Section:</h1>
-                                      <h1 class="font-normal text-lg">B</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Roll No.:</h1>
-                                      <h1 class="font-normal text-lg">10</h1>
-                                    </div>
-                                    <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-                                      <h1 class="font-semibold text-xl mr-5">Address:</h1>
-                                      <h1 class="font-normal text-lg">60, Kakrail, Dhaka-1000</h1>
-                                    </div>
-                          </div>
+        <section class="flex flex-col gap-y-4">
+            <div class="flex flex-row justify-between items-center">
+                <h1 class="text-2xl font-serif">Student Profile</h1>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Edit Profile</button>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="border-2 border-gray-800 rounded-md p-2">
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="border-2 border-gray-800 rounded-md p-2">
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <label for="address">Address</label>
+              <input type="text" name="address" id="address" class="border-2 border-gray-800 rounded-md p-2">
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" id="phone" class="border-2 border-gray-800 rounded-md p-2">
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" id="dob" class="border-2 border-gray-800 rounded-md p-2">
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <lebel for="roll" class="text-sm">Roll</lebel>
+              <input type="text" name="roll" id="roll" class="border-2 border-gray-800 rounded-md p-2">
+            </div>
         </section>
-        <section class="mt-32 -mx-16 flex flex-col">
-          <div class="">
-            <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-              <h1 class="font-semibold text-xl mr-5">Father's Name:</h1>
-              <h1 class="font-normal text-lg">Md. Khalilur Rahman</h1>
-            </div>
-            <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-              <h1 class="font-semibold text-xl mr-5">Fathers's Occupation:</h1>
-              <h1 class="font-normal text-lg">Business</h1>
-            </div>
-            <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-              <h1 class="font-semibold text-xl mr-5">Mother's Name:</h1>
-              <h1 class="font-normal text-lg">Shahen Anwar</h1>
-            </div>
-            <div class="flex flex-row mx-5 bg-[#ffffff] text-black  border p-1 m-2 border-black border-y-2">
-              <h1 class="font-semibold text-xl mr-5">Guardian Phone No.:</h1>
-              <h1 class="font-normal text-lg">01748534709</h1>
-            </div>
-          </div>
-        </section>
+    </div>
+
           
 </body>
 </html>
