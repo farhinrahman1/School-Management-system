@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    <div class="flex flex-row gap-x-44 bg-amber-50">
+    <div class="flex flex-row gap-x-44 bg-white">
         <section class="font-poppins antialiased">
             <div
               id="view"
@@ -28,11 +28,11 @@
               </button>
               <div
                 id="sidebar"
-                class="bg-white h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
+                class="bg-[#fff8f8] h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
                 x-show="sidenav"
                 @click.away="sidenav = false">
                 <div class="space-y-6 md:space-y-10 mt-10">
-                  <div class="bg-[#fff8f8] text-black  border mx-16 p-1 m-2 w-16 text-2xl font-serif border-black border-y-2 cursor-pointer">
+                  <div class="bg-white text-black  border mx-16 p-1 m-2 w-16 text-2xl font-serif border-black border-y-2 cursor-pointer">
                     <h1><a href="index.html">EDU</a></h1>
                   </div>
                   <div id="profile" class="space-y-3">
@@ -49,7 +49,7 @@
                   <div id="menu" class="flex flex-col space-y-2">
                     <a
                       href="student.html"
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -65,7 +65,7 @@
                     </a>
                     <a
                       href=""
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -84,7 +84,7 @@
                     </a>
                     <a
                       href=""
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -102,7 +102,7 @@
                     </a>
                     <a
                       href=""
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -126,69 +126,69 @@
         <section class="flex flex-col gap-y-2 p-4 mt-10">
             <h1 class="text-3xl font-semibold font-serif text-black">Grade Sheet</h1>
             <div class="flex flex-row gap-x-3">
-              <lebel class="text-lg text-black">Student Name</lebel>
-            <input type="text" class="border text-xl font-normal border-black rounded-md" style="width:200px">
-            <lebel class="text-lg text-black">Student Roll</lebel>
-            <input type="text" class="border text-xl font-normal border-black rounded-md" style="width:200px">
+              <lebel class="text-base text-black">Student Name</lebel>
+            <input type="text" class="border text-lg border-black rounded-lg" style="width:200px">
+            <lebel class="text-base text-black">Student Roll</lebel>
+            <input type="text" class="border text-lg font-normal border-black rounded-lg" style="width:200px height:50px">
             </div>
-            <table style="width:568px" class="table-fixed md:table-fixed border-collapse border-[3px] border-black ">
+            <table style="width:568px" class="table-fixed md:table-fixed border-collapse border-[2px] border-black ">
                 <thead style="height:40px">
                     <tr>
-                        <th class="border-[3px] border-black">Subject</th>
-                        <th class="border-[3px] border-black">Grade</th>
-                        <th class="border-[3px] border-black">Marks</th>
+                        <th class="border-[2px] border-black">Subject</th>
+                        <th class="border-[2px] border-black">Grade</th>
+                        <th class="border-[2px] border-black">Marks</th>
                     </tr>
                 </thead>
                 <tbody class="font-medium">
                     <tr style="height:40px">
-                        <td class="border-[3px] border-black">Mathematics</td>
-                        <td class="border-[3px] border-black">A+</td>
-                        <td class="border-[3px] border-black">95</td>
+                        <td class="border-[2px] border-black">Mathematics</td>
+                        <td class="border-[2px] border-black">A+</td>
+                        <td class="border-[2px] border-black">95</td>
                     </tr>
                     <tr style="height:40px">
-                        <td class="border-[3px] border-black">Physics</td>
-                        <td class="border-[3px] border-black">A</td>
-                        <td class="border-[3px] border-black">85</td>
+                        <td class="border-[2px] border-black">Physics</td>
+                        <td class="border-[2px] border-black">A</td>
+                        <td class="border-[2px] border-black">85</td>
                     </tr>
                     <tr style="height:40px">
-                        <td class="border-[3px] border-black">Chemistry</td>
-                        <td class="border-[3px] border-black">A</td>
-                        <td class="border-[3px] border-black">85</td>
+                        <td class="border-[2px] border-black">Chemistry</td>
+                        <td class="border-[2px] border-black">A</td>
+                        <td class="border-[2px] border-black">85</td>
                     </tr>
                     <tr style="height:40px">
-                        <td class="border-[3px] border-black">Biology</td>
-                        <td class="border-[3px] border-black">A</td>
-                        <td class="border-[3px] border-black">85</td>
+                        <td class="border-[2px] border-black">Biology</td>
+                        <td class="border-[2px] border-black">A</td>
+                        <td class="border-[2px] border-black">85</td>
                     </tr>
                     <tr style="height:40px">
-                        <td class="border-[3px] border-black">English</td>
-                        <td class="border-[3px] border-black">A</td>
-                        <td class="border-[3px] border-black">85</td>
+                        <td class="border-[2px] border-black">English</td>
+                        <td class="border-[2px] border-black">A</td>
+                        <td class="border-[2px] border-black">85</td>
                     </tr>
                     <tr style="height:40px">
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
                     </tr>
                     <tr style="height:40px">
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
                     </tr>
                     <tr style="height:40px">
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
                     </tr>
                     <tr style="height:40px">
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
                     </tr>
                     <tr style="height:40px">
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
-                      <td class="border-[3px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
+                      <td class="border-[2px] border-black"></td>
                     </tr>
                 </tbody>
             </table>

@@ -7,32 +7,19 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    <div class="flex flex-row gap-x-44 bg-amber-50">
+    <div class="flex flex-row gap-x-44 bg-white">
         <section class="font-poppins antialiased">
             <div
               id="view"
               class="h-full flex flex-row"
               x-data="{ sidenav: true }">
-              <button
-                @click="sidenav = true"
-                class="p-2 border-2 bg-white rounded-md border-gray-200 shadow-lg text-gray-500 focus:bg-teal-500 focus:outline-none focus:text-white absolute top-0 left-0 sm:hidden">
-                <svg
-                  class="w-5 h-5 fill-current"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"clip-rule="evenodd"></path>
-                </svg>
-              </button>
               <div
                 id="sidebar"
-                class="bg-white h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
+                class="bg-[#F5F5DC] h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
                 x-show="sidenav"
                 @click.away="sidenav = false">
                 <div class="space-y-6 md:space-y-10 mt-10">
-                  <div class="bg-[#fff8f8] text-black  border mx-16 p-1 m-2 w-16 text-2xl font-serif border-black border-y-2 cursor-pointer">
+                  <div class="bg-white text-black  border mx-16 p-1 m-2 w-16 text-2xl font-serif border-black border-y-2 cursor-pointer">
                     <h1><a href="index.html">EDU</a></h1>
                   </div>
                   <div id="profile" class="space-y-3">
@@ -49,7 +36,7 @@
                   <div id="menu" class="flex flex-col space-y-2">
                     <a
                       href="student.html"
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -65,7 +52,7 @@
                     </a>
                     <a
                       href="gradesheet.html"
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -84,7 +71,7 @@
                     </a>
                     <a
                       href=""
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -102,7 +89,7 @@
                     </a>
                     <a
                       href="logout.html"
-                      class="text-sm font-medium text-black py-2 px-2 hover:bg-black hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+                      class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
                         class="w-6 h-6 fill-current inline-block"
@@ -126,7 +113,7 @@
         <section class="flex flex-col gap-y-3 mt-9 mx-5 text-black">
             <div class="flex flex-row justify-between items-center gap-y-10">
                 <h1 class="text-2xl font-serif font-semibold">Student Profile</h1>
-                <button class="bg-black text-white font-medium mx-6 px-3 py-1 rounded-md text-sm">Edit Profile</button>
+                <button class="bg-black hover:underline text-white font-medium mx-6 px-3 py-1 rounded-md text-sm">Edit Profile</button>
             </div>
             <div class="flex flex-col gap-y-0">
               <label class="font-medium" for="name">Name</label>
