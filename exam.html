@@ -145,7 +145,7 @@
         <!-- make an exam routine of a student -->
         <section class="flex flex-col w-2/4 gap-y-10">
           <div class="flex flex-row justify-between items-center bg-white p-4 mt-10">
-              <h1 class="text-2xl font-bold font-serif">Attendance Sheet</h1>
+              <h1 class="text-2xl font-bold font-serif">Exam Routine</h1>
               <div class="flex flex-row gap-x-5">
                   <button class="bg-black text-white px-4 py-2 rounded-lg hover:underline">Download</button>
                   <button class="bg-black text-white px-4 py-2 rounded-lg hover:underline">Print</button>
@@ -177,11 +177,47 @@
                       <option value="sectionD">Section D</option>
                       <option value="sectionE">Section E</option>
                       <option value="sectionF">Section F</option>
-
                     </select>
                   </form>
               </div>
           </div>
+          <div class="flex flex-col gap-y-4 p-4 ">
+              <table class="table-auto w-full">
+                  <thead>
+                      <tr>
+                          <th class="px-4 py-2 border bg-black text-white border-black">Subject</th>
+                          <th class="px-4 py-2 border bg-black text-white border-black">Date</th>
+                          <th class="px-4 py-2 border bg-black text-white border-black">Time</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="border px-4 py-2  border-black">Mathematics</td>
+                          <td class="border px-4 py-2 border-black">12/12/2021</td>
+                          <td class="border px-4 py-2 border-black">10:00 AM</td>
+                      </tr>
+                      <tr>
+                          <td class="border px-4 py-2 border-black">English</td>
+                          <td class="border px-4 py-2 border-black">13/12/2021</td>
+                          <td class="border px-4 py-2 border-black">11:00 AM</td>
+                      </tr>
+                      <tr>
+                          <td class="border px-4 py-2 border-black">Bangla</td>
+                          <td class="border px-4 py-2 border-black">14/12/2021</td>
+                          <td class="border px-4 py-2 border-black">12:00 PM</td>
+                      </tr>
+                      <tr>
+                          <td class="border px-4 py-2 border-black">Science</td>
+                          <td class="border px-4 py-2 border-black">15/12/2021</td>
+                          <td class="border px-4 py-2 border-black">1:00 PM</td>
+                      </tr>
+                      <tr>
+                          <td class="border px-4 py-2 border-black">Religion</td>
+                          <td class="border px-4 py-2 border-black">16/12/2021</td>
+                          <td class="border px-4 py-2 border-black">2:00 PM</td>
+                      </tr>
+                  </tbody>
+              </table>
         </section>
 </body>
 </html>
