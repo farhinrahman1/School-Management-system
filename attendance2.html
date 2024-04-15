@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDU | Teacher Dashbaord</title>
+    <title>EDU | Attendance Sheet</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
@@ -157,75 +157,82 @@
               </div>
             </div>
         </section>
-        <section class="flex flex-col gap-y-3 mt-9 text-black">
-            <div class="flex flex-row justify-between items-center gap-y-10">
-                <h1 class="text-2xl font-serif font-semibold">Teacher Profile</h1>
-                <button class="bg-black hover:underline text-white font-medium mx-6 px-3 py-1 rounded-lg text-sm">Edit Profile</button>
-            </div>
-            <div class="flex flex-col gap-y-0">
-              <label class="font-medium" for="name">Name</label>
-              <input type="text" name="name" id="name" style="width: 40rem" class="border-2 border-gray-800 rounded-md p-1">
-            </div>
-            <div class="flex flex-col gap-y-0">
-              <label class="font-medium" for="address">Address</label>
-              <input type="text" name="address" id="address" style="width: 40rem" class="border-2 border-gray-800 rounded-md p-1">
-            </div>
-            <div class="flex flex-col gap-y-0">
-              <label class="font-medium" for="class">Phone</label>
-              <input type="text" name="phone" id="phone" style="width: 40rem" class="border-2 border-gray-800 rounded-md p-1">
-            </div>
-            <div class="flex flex-col gap-y-0">
-              <label class="font-medium" for="email">Email</label>
-              <input type="email" name="email" id="email" style="width: 40rem" class="border-2 border-gray-800 rounded-md p-1">
-            </div>
-            <div class="flex flex-col gap-y-0">
-              <label class="font-medium" for="consulation">Consulation</label>
-              <input type="text" name="consulation" id="consulation" style="width: 40rem" class="border-2 border-gray-800 rounded-md p-1">
-            </div>
-            <div class="flex flex-col gap-y-0">
-              <label class="font-medium" for="subject">Spacialization</label>
-              <input type="text" name="subject" id="subject" style="width: 40rem" class="border-2 border-gray-800 rounded-md p-1">
-            </div>
-            <!-- make a section of study materials where teacher can choose class and subject -->
-            <div class="flex flex-row gap-x-44 bg-white">
-                <h1 class="text-2xl font-serif font-semibold mt-6">Study Materials</h1>
-
-                <div class="flex flex-col gap-y-0">
-                <label class="font-medium" for="class">Class</label>
-                <select name="class" id="class" class="border-2 border-gray-800 rounded-lg p-1">
-                    <option value="class-1">Class 1</option>
-                    <option value="class-2">Class 2</option>
-                    <option value="class-3">Class 3</option>
-                    <option value="class-4">Class 4</option>
-                    <option value="class-5">Class 5</option>
-                    <option value="class-6">Class 6</option>
-                    <option value="class-7">Class 7</option>
-                    <option value="class-8">Class 8</option>
-                    <option value="class-9">Class 9</option>
-                    <option value="class-10">Class 10</option>
-                </select>
+        <section class="flex flex-col w-2/4 gap-y-10">
+            <div class="flex flex-row justify-between items-center bg-white p-4 mt-10">
+                <h1 class="text-2xl font-bold font-serif">Attendance Sheet</h1>
+                <div class="flex flex-row gap-x-5">
+                    <button class="bg-black text-white px-4 py-2 rounded-lg hover:underline">Download</button>
+                    <button class="bg-black text-white px-4 py-2 rounded-lg hover:underline">Print</button>
                 </div>
-                <div class="flex flex-col gap-y-0">
-                <label class="font-medium" for="study-material">Subject</label>
-                <select name="study-material" id="study-material" class="border-2 border-gray-800 rounded-lg p-1">
-                    <option value="bangla">Bangla</option>
-                    <option value="english">English</option>
-                    <option value="math">Math</option>
-                    <option value="science">Science</option>
-                    <option value="social-science">Social Science</option>
-                    <option value="religion">Religion</option>
-                    <option value="ict">ICT</option>
-                    <option value="physical-education">Physical Education</option>
-                </select>
-                </div>
-                <div class="mt-7 mb-1 -mx-32">
-                    <button class="bg-black text-white font-medium px-3 py-1 rounded-lg hover:underline text-sm">GET</button>
-                </div>            
             </div>
-            
+            <div class="flex flex-col gap-y-4 p-4">
+                <div class="flex flex-row justify-between items-center">
+                    <form class="max-w-sm mx-auto">
+                      <label for="class" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Class</label>
+                      <select id="class" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500">
+                        <option selected>Class 1</option>
+                        <option value="class2">Class 2</option>
+                        <option value="class3">Class 3</option>
+                        <option value="class4">Class 4</option>
+                        <option value="class5">Class 5</option>
+                        <option value="class6">Class 6</option>
+                        <option value="class7">Class 7</option>
+                        <option value="class8">Class 8</option>
+                        <option value="class9">Class 9</option>
+                        <option value="class10">Class 10</option>
+                      </select>
+                    </form>
+                    <form class="max-w-sm mx-auto">
+                      <label for="section" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Section</label>
+                      <select id="section" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500">
+                        <option selected>Section A</option>
+                        <option value="sectionB">Section B</option>
+                        <option value="sectionC">Section C</option>
+                        <option value="sectionD">Section D</option>
+                        <option value="sectionE">Section E</option>
+                        <option value="sectionF">Section F</option>
 
-            </section>
-        </div>
-        
+                      </select>
+                    </form>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <div class="flex flex-col gap-y-1">
+                        <div class="flex flex-row justify-between items-center bg-black text-white p-4">
+                            <h1 class="text-md font-serif">Roll No</h1>
+                            <h1 class="text-md font-serif">Name</h1>
+                            <h1 class="text-md font-serif">Attendance</h1>
+                        </div>
+                        <div class="flex flex-col gap-y-1">
+                            <div class="flex flex-row justify-between items-center bg-gray-100 p-1">
+                                <h1 class="text-md font-serif">1.</h1>
+                                <h1 class="text-md font-serif">Sifat Jahan</h1>
+                                <h1 class="text-md font-serif">Present</h1>
+                            </div>
+                            <div class="flex flex-row justify-between items-center bg-gray-100 p-1">
+                                <h1 class="text-md font-serif">2.</h1>
+                                <h1 class="text-md font-serif">Tanvirul Islam</h1>
+                                <h1 class="text-md font-serif">Present</h1>
+                            </div>
+                            <div class="flex flex-row justify-between items-center bg-gray-100 p-1">
+                                <h1 class="text-md font-serif">3.</h1>
+                                <h1 class="text-md font-serif">Farhin Rahman</h1>
+                                <h1 class="text-md font-serif">Present</h1>
+                            </div>
+                            <div class="flex flex-row justify-between items-center bg-gray-100 p-1">
+                                <h1 class="text-md font-serif">4.</h1>
+                                <h1 class="text-md font-serif">Farhana Chowdhury</h1>
+                                <h1 class="text-md font-serif">Present</h1>
+                                </div>
+                            <div class="flex flex-row justify-between items-center bg-gray-100 p-1">
+                                <h1 class="text-md font-serif">5.</h1>
+                                <h1 class="text-md font-serif">Tashin Ahmed</h1>
+                                <h1 class="text-md font-serif">Present</h1>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+    </div>
 </body>
 </html>
