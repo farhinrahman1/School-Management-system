@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDU | Grade Sheet</title>
+    <title>EDU | Exam Routine</title>
     <link rel="stylesheet" href="./css/output.css">
+
 </head>
 <body>
     <div class="flex flex-row gap-x-44 bg-white">
@@ -83,7 +84,7 @@
                       <span class="">Grade Sheet</span>
                     </a>
                     <a
-                      href=""
+                      href="exam.html"
                       class="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                     >
                       <svg
@@ -141,77 +142,46 @@
               </div>
             </div>
         </section>
-        <section class="flex flex-col gap-y-2 p-4 mt-10">
-            <h1 class="text-3xl font-semibold font-serif text-black">Grade Sheet</h1>
-            <div class="flex flex-row gap-x-3">
-              <lebel class="text-base text-black">Student Name</lebel>
-            <input type="text" class="border text-lg border-black rounded-lg" style="width:200px">
-            <lebel class="text-base text-black">Student Roll</lebel>
-            <input type="text" class="border text-lg font-normal border-black rounded-lg" style="width:200px 
-            height:50px">
-            </div>
-            <table style="width:568px" class="table-fixed md:table-fixed border-collapse border-[2px] border-black ">
-                <thead style="height:40px">
-                    <tr>
-                        <th class="border-[2px] border-black">Subject</th>
-                        <th class="border-[2px] border-black">Grade</th>
-                        <th class="border-[2px] border-black">Marks</th>
-                    </tr>
-                </thead>
-                <tbody class="font-medium">
-                    <tr style="height:40px">
-                        <td class="border-[2px] border-black">Mathematics</td>
-                        <td class="border-[2px] border-black">A+</td>
-                        <td class="border-[2px] border-black">95</td>
-                    </tr>
-                    <tr style="height:40px">
-                        <td class="border-[2px] border-black">Physics</td>
-                        <td class="border-[2px] border-black">A</td>
-                        <td class="border-[2px] border-black">85</td>
-                    </tr>
-                    <tr style="height:40px">
-                        <td class="border-[2px] border-black">Chemistry</td>
-                        <td class="border-[2px] border-black">A</td>
-                        <td class="border-[2px] border-black">85</td>
-                    </tr>
-                    <tr style="height:40px">
-                        <td class="border-[2px] border-black">Biology</td>
-                        <td class="border-[2px] border-black">A</td>
-                        <td class="border-[2px] border-black">85</td>
-                    </tr>
-                    <tr style="height:40px">
-                        <td class="border-[2px] border-black">English</td>
-                        <td class="border-[2px] border-black">A</td>
-                        <td class="border-[2px] border-black">85</td>
-                    </tr>
-                    <tr style="height:40px">
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                    </tr>
-                    <tr style="height:40px">
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                    </tr>
-                    <tr style="height:40px">
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                    </tr>
-                    <tr style="height:40px">
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                    </tr>
-                    <tr style="height:40px">
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                      <td class="border-[2px] border-black"></td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- make an exam routine of a student -->
+        <section class="flex flex-col w-2/4 gap-y-10">
+          <div class="flex flex-row justify-between items-center bg-white p-4 mt-10">
+              <h1 class="text-2xl font-bold font-serif">Attendance Sheet</h1>
+              <div class="flex flex-row gap-x-5">
+                  <button class="bg-black text-white px-4 py-2 rounded-lg hover:underline">Download</button>
+                  <button class="bg-black text-white px-4 py-2 rounded-lg hover:underline">Print</button>
+              </div>
+          </div>
+          <div class="flex flex-col gap-y-4 p-4">
+              <div class="flex flex-row justify-between items-center">
+                  <form class="max-w-sm mx-auto">
+                    <label for="class" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Class</label>
+                    <select id="class" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500">
+                      <option selected>Class 1</option>
+                      <option value="class2">Class 2</option>
+                      <option value="class3">Class 3</option>
+                      <option value="class4">Class 4</option>
+                      <option value="class5">Class 5</option>
+                      <option value="class6">Class 6</option>
+                      <option value="class7">Class 7</option>
+                      <option value="class8">Class 8</option>
+                      <option value="class9">Class 9</option>
+                      <option value="class10">Class 10</option>
+                    </select>
+                  </form>
+                  <form class="max-w-sm mx-auto">
+                    <label for="section" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Section</label>
+                    <select id="section" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500">
+                      <option selected>Section A</option>
+                      <option value="sectionB">Section B</option>
+                      <option value="sectionC">Section C</option>
+                      <option value="sectionD">Section D</option>
+                      <option value="sectionE">Section E</option>
+                      <option value="sectionF">Section F</option>
+
+                    </select>
+                  </form>
+              </div>
+          </div>
         </section>
-    </div>
 </body>
 </html>
